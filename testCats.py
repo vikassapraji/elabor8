@@ -60,7 +60,7 @@ class testCats(unittest.TestCase):
     def printDebug(self, msg):
         logger.debug(msg)
 
-    @unittest.skip('')
+    #@unittest.skip('')
     def test_1_GetAllCats(self):
         testCaseName = inspect.stack()[0][3]
         self.printDebug("Executing : " + testCaseName)
@@ -81,7 +81,7 @@ class testCats(unittest.TestCase):
             self.assertTrue(catResponse['userUpvoted'] == catRecord.userUpVoted)
             self.assertEqual(catRecord.text,catResponse['text'])
 
-    @unittest.skip('')
+    #@unittest.skip('')
     def test_2_GetACat(self):
         testCaseName = inspect.stack()[0][3]
         self.printDebug("Executing : " + testCaseName)
@@ -99,8 +99,8 @@ class testCats(unittest.TestCase):
             self.assertTrue(catResponse["source"] == "user")
             self.assertTrue(catResponse["deleted"] == False)
             self.assertTrue(catResponse["__v"] == 0)
-            self.assertTrue(catResponse["status"]["verified"] == True)
-            self.assertTrue(catResponse["status"]["sentCount"] == 1)
+            #self.assertTrue(catResponse["status"]["verified"] == True)
+            #self.assertTrue(catResponse["status"]["sentCount"] == 1)
 
     #@unittest.skip('')
     def test_3_GetNonExistentCat(self):

@@ -1,0 +1,3 @@
+20:26:29,822 root DEBUG setUp
+20:26:29,824 root DEBUG Executing : test_3_GetNonExistentCat
+20:26:29,826 root DEBUG tearDown
